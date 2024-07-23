@@ -1,0 +1,528 @@
+*{
+    margin:0;
+    padding:0;
+    color:white;
+    font-family:Montserrat;
+    transition: all 0s linear;
+}
+body{
+    background-color: black;
+    overflow:hidden;
+}
+body .main{
+    background-color: black;
+    display:flex;
+    padding:0.65rem;
+    height:85vh;
+}
+.sidebar{
+    background-color:black;
+    width:300px;
+    border-radius:0.5rem;
+    margin-right: 0.5rem;
+    display:flex;
+    flex-direction: column;
+}
+.main_content{
+    background-color:#121212;
+    overflow-y:auto;
+    flex:1;
+    border-radius:0.5rem;
+}
+.media_player{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    height:12vh;
+    background-color:black;
+    margin:0;
+    padding-top: 0.5rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-options{
+    padding:0.5rem 1.75rem 0.4rem 1.75rem;
+    line-height: 3rem;
+    background-color: #121212;
+    border-radius:0.5rem;
+    font-weight: 600;
+}
+#option1 span{
+    position: relative;
+    bottom:3px;
+}
+#option1{
+    cursor: pointer;
+}
+#option2 span{
+    position: relative;
+    bottom:3px;
+}
+#option2{
+    opacity:0.7;
+    cursor: pointer;
+}
+#option2:hover{
+    opacity: 1;
+}
+.nav-library{
+    margin-top: 0.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+    flex:1;
+    overflow: hidden;
+}
+.lib-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+    position: sticky;
+    top:0;
+    background-color: #121212;
+
+}
+.lib-options #lib{
+    margin-left:0.75rem;
+    opacity: 0.7;
+    font-weight: 600;
+    cursor:pointer;
+}
+.lib-options #lib:hover{
+    opacity: 1;
+}
+   
+
+.lib-options #lib img{
+    margin-right: 1rem;
+}
+.lib-options #lib span{
+    position: relative;
+    bottom:3px;
+}
+.lib-options #option{
+    display: flex;
+    opacity: 0.7;
+    margin-right: 0.5rem;
+   align-items: center;
+   font-weight: 300;
+ 
+}
+#add{
+    margin-right: 0.75rem;
+}
+.lib-options #option i{
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+.lib-options #option i:hover{
+ color: white;
+}
+.lib-options .btn{
+    height:2rem;
+    width:2rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.lib-options .btn:hover{
+    background-color: rgba(128, 128, 128, 0.1);
+}
+#card{
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+#card #title{
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+#card #extra{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    font-weight: 550;
+}
+#card button{
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    border-radius: 23px;
+    cursor: pointer;
+    transition: all linear;
+}
+#card button:hover{
+    transform: scale(1.05);
+    color: black;
+    background-color: rgba(255, 255,255, 0.9);
+}
+.media_player .song-play{
+    display:flex;
+    margin-left:1rem;
+    align-items: center;
+}
+.media_player .song-play img{
+        width:3.5rem;
+        border-radius: 0.25rem;
+        margin-right: 0.9rem;
+        margin-bottom: 0.4rem;
+}
+.media_player .song-play #song_name{
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+.media_player .song-play #song_name:hover{
+    text-decoration: underline;
+}
+.media_player .song-play #artist{
+    font-size: 0.7rem;
+    color:rgba(255, 255,255, 0.5);
+    cursor: pointer;
+}
+.media_player .song-play #artist:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+
+}
+.media_player .song-play #plus-icon{
+    background-color: transparent;
+    color:rgba(255, 255,255, 0.5);
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+.media_player .song-play #plus-icon:hover{
+    color: white;
+    opacity: 1;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right:5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    margin-left:10rem;
+   
+}
+.player .icons{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   left:2rem;
+ 
+}
+.player .icons img{
+    margin:0 1rem;
+    cursor: pointer;
+}
+#play:hover{
+    transform: scale(1.1);
+      
+}
+.prenext:hover{
+    opacity: 1;
+}
+.progess-bar input{
+appearance: none;
+width:28rem;
+height:0.25rem;
+margin-top: 0.4rem;
+cursor: pointer;
+position: relative;
+left:1.5rem;
+}
+.progess-bar input::-webkit-slider-thumb{
+   accent-color: white;
+}
+.tools{
+    display: flex;
+    align-content: center;
+    margin-right:1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition:all 0s linear ;
+}
+.tools img{
+    margin-right:0.75rem;
+    opacity: 0.7;
+}
+.tools i{
+    opacity: 0.7;
+}
+.tools input{
+    appearance: none;
+    width:6rem;
+    height:0.25rem;
+    margin-right:0.75rem;
+    cursor: pointer;
+}
+.tools input::-webkit-slider-thumb{
+    accent-color: white;
+}
+.tools img:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.tools i:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+.main-icons{
+    position:sticky;
+    top:0;
+    background-color: #121212;
+    z-index: 2;
+}
+.main-nav{
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#back,#front{
+    cursor:not-allowed;
+}
+.main-icons button{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    border: none;
+    padding: 0.35rem 0.5rem;
+}
+.account button{
+    cursor: pointer;
+}
+.account button:hover{
+    transform: scale(1.05);
+}
+#exp{
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    margin-right: 0.25rem;
+}
+#install{
+    font-weight: 700;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+    padding: 0.5rem 0.5rem;
+}
+#profile{
+    padding: 0.4rem 0.1rem;
+    margin-left: 0.25rem;margin-right: 0.25rem;
+}
+#profile span{
+    background-color: rgb(243, 14, 52);
+    color: black;
+    font-weight: 700;
+    border-radius: 50%;
+    margin:0.2rem;
+    padding: 0.2rem 0.4rem;
+}
+.sections{
+    padding: 0 1rem 1rem 1rem;
+}
+.sections button{
+    color:white;
+    border:none;
+    background-color: rgba(128, 128, 128, 0.2);
+    font-weight: 700;
+    padding: 0.35rem 0.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.sections button:hover{
+    background-color: rgba(128, 128, 128, 0.3);
+}
+#all{
+    background-color: white;
+    color: black;
+}
+.recents{
+    display:flex;
+    flex-wrap: wrap;
+    gap:0.75rem;
+    margin-left: 1rem;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 3rem;
+}
+.one{
+    background-color: rgba(128, 128, 128, 0.2);
+    width:14.8rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.recents img{
+  height: 100%;
+  width: 3rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  margin-right: 0.5rem;
+}
+.one span .name{
+    margin-right: 0.25rem;
+    position: relative;
+    bottom: 1.25rem;
+}
+.one:hover{
+    background-color:rgba(128, 128, 128, 0.5) ;
+}
+.one .play{
+background-color: black;
+margin-bottom: 0.5rem;
+border-radius: 50%;
+height:2rem;
+width:2rem;
+margin-top: 0.5rem;
+opacity: 0;
+}
+.one:hover .play{
+    opacity: 1;
+}
+
+.madeforuser{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
+.madeforuser .card{
+    height:12rem;
+    width:8.7rem;
+    padding: 0.8rem;
+    transition: all 0s linear;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    cursor:pointer;
+}
+.madeforuser .card p{
+    color: grey;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+.madeforuser .card .play{
+    position:relative;
+    bottom: 6rem;
+    left:6rem;
+    background-color: black;
+    border-radius: 50%;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.madeforuser .card:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.madeforuser .card:hover .play{
+    visibility: visible;
+}
+#heading h2:hover{
+    text-decoration: underline;
+}
+#heading a{
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+#heading a:hover{
+    text-decoration: underline
+}
+.Recentlyplayed{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
+.Recentlyplayed .card{
+    height:14rem;
+    width:11rem;
+    padding: 0.8rem;
+    transition: all 0s linear;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    cursor:pointer;
+}
+.Recentlyplayed .card p{
+    color: grey;
+    margin-top: 0.2rem;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+.Recentlyplayed .card .play{
+    position:relative;
+    bottom: 6rem;
+    left:8rem;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.Recentlyplayed .card:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+}
+.Recentlyplayed .card:hover .play{
+    visibility: visible;
+}
+.sites{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 2rem;
+
+}
+.sites div{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+}
+.sites .social{
+    display: flex;
+    flex-direction: row;
+}
+footer a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    padding-top:2rem;
+    padding-bottom: 3rem;
+    border-top: 0.1rem solid rgba(255,255,255,0.2);
+}
+.sites a:hover{
+opacity: 1;
+text-decoration: underline;
+}
+.legals a{
+padding: 0.6rem;
+}
+.legals a:hover{
+  opacity: 1;
+}
+.social button{
+    background-color:rgba(128, 128, 128, 0.2);
+    border: none;
+    height:2.5rem;
+    width:2.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    margin-left: 0.8rem;
+}
+.social button:hover{
+    background-color: grey;
+}

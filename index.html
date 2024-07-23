@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spotify - Webplayer: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav-options">
+                <div id="option1"><i class="fa-solid fa-house" style="margin-right: 1rem;font-size: 1.25rem;"></i><span style="font-size: 1rem;">Home</span></div>
+                <div id="option2"><i class="fa-solid fa-magnifying-glass" style="margin-right: 1rem;font-size: 1.25rem;"></i><span style="font-size: 1rem;">Search</span></div>
+            </div>
+            <div class="nav-library">
+                <div class="lib-options">
+                    <div id="lib"><img src="library_icon.png" alt="lib" width="20"><span>Your Library</span></div>
+                    <div id="option"><button class="btn" id="add"><i class="fa-solid fa-plus" ></i></button><button class="btn"><i class="fa-solid fa-arrow-right"></i></button></div>
+                </div>
+                <div class="lib-cards">
+                    <div id="card">
+                        <p id="title">Create your first playlist</p>
+                        <p id="extra">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div id="card">
+                        <p id="title">Let's find some podcasts to follow</p>
+                        <p id="extra">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="main-icons"> 
+                <div class="main-nav">
+                <div class="contols">
+                <button id="back"><img src="backward_icon.png" alt="backward_icon" height="13"></button>
+                <button id="front"><img src="forward_icon.png" alt="forward_icon" height="13"></button>
+                 </div>
+                <div class="account">
+                <button id="exp">Explore Premium</button>
+                <button id="install"><i class="fa-regular fa-circle-down" style="margin-right: 0.2rem;"></i>Install App</button>
+                <button id="bell"><i class="fa-regular fa-bell" style="font-size: 1rem;"></i></button>
+                <button id="profile"><span>S</span></button>
+                </div>
+            </div>
+                <div class="sections">
+                    <button id="all">All</button>
+                    <button>Music</button>
+                    <button>Podcasts</button>
+                </div>
+            </div>
+            <div class="content">
+                <div class="recents">
+                    <div class="one"><span><img src="album_icon3.jpg" alt="pic"><span class="name">Hichki</span></span><img src="play_musicbar.png" class="play"></div>
+                    <div class="one"><span><img src="album_icon4.jpg" alt="pic"><span class="name">Shershaah</span></span><img src="play_musicbar.png"  class="play" ></div>
+                    <div class="one"><span><img src="album_icon5.jpg" alt="pic"><span class="name">Munjya</span></span><img src="play_musicbar.png"  class="play"></div>
+                    <div class="one"><span><img src="album_icon6.jpg" alt="pic"><span class="name">Laapataa Ladies</span></span><img src="play_musicbar.png"  class="play"></div>
+                    <div class="one"><span><img src="album_icon7.jpg" alt="pic"><span class="name">Jubin Nautiyal</span></span><img src="play_musicbar.png"  class="play"></div>
+                    <div class="one"><span><img src="album_icon8.jpg" alt="pic"><span class="name">Bhool Bhulaiyaa 2</span></span><img src="play_musicbar.png"  class="play"></div>
+                    <div class="one"><span><img src="album_icon9.jpg" alt="pic"><span class="name">Crew</span></span><img src="play_musicbar.png"  class="play"></div>
+                    <div class="one"><span><img src="album_icon11.jpg" alt="pic"><span class="name">Suniyan Suniyan</span></span><img src="play_musicbar.png"  class="play"></div>
+                </div>
+                <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Made For Shrey Garg</h2>
+                <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                <div class="madeforuser">
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165115.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 1</h4>
+                        <p>Jasleen Royal, Sachin-Jigar, Vishal Mishra...</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165127.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 2</h4>
+                        <p>Pritam, Amit Trivedi, Mithoon and more</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165139.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 3</h4>
+                        <p>Vishal-Shekhar, A.R. Rahman, Illaiyaraja an...</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165145.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 4</h4>
+                        <p>Badshah, Darshan Raval, Sunidhi...</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165153.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 5</h4>
+                        <p>Atif Aslam, Rishi Kumar Instrumental...</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                    <div class="card">
+                        <img src="Screenshot 2024-07-23 165159.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                        <h4>Daily Mix 6</h4>
+                        <p>Ritviz, KhoslaRaghu, Deepak Rathore...</p>
+                        <img src="play_musicbar.png" class="play" width="40">
+                    </div>
+                </div>
+                <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                    <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Popular albums</h2>
+                    <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                    <div class="madeforuser">
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175425.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>Sajni (From...</h4>
+                            <p>Ram Sampath, Arijit Singh, Prashant Pandey</p>
+                            <img src="play_musicbar.png" class="play" width="40">
+                        </div>
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175439.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>Aashiqui 2</h4>
+                            <p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+                            <img src="play_musicbar.png" class="play" width="40">
+                        </div>
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175455.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>Aavesham</h4>
+                            <p>Sushin Shyam, Vinayak Sasikumar</p>
+                            <img src="play_musicbar.png" class="play" width="40">
+                        </div>
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175504.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>ANIMAL</h4>
+                            <p>A.R.Rahman, Irshad Kamil</p>
+                            <img src="play_musicbar.png" class="play" width="40">
+                        </div>
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175513.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>Still Rollin</h4>
+                            <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                            <img src="play_musicbar.png" class="play" width="40">
+                        </div>
+                        <div class="card">
+                            <img src="Screenshot 2024-07-23 175520.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                            <h4>Making Memories</h4>
+                            <p>Shubh <br></p>
+                            <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                        </div>
+                        
+                    </div>
+                    <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                        <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Recently played</h2>
+                        <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                        <div class="Recentlyplayed">
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 175425.png" alt="img" width="169" style="border-radius: 0.25rem;">
+                                <h4>Sajni (From...</h4>
+                                <p>Ram Sampath, Arijit Singh, Prashant Pandey</p>
+                                <img src="play_musicbar.png" class="play" width="40">
+                            </div>
+                            <div class="card">
+                                <img src="album_icon3.jpg" alt="img" width="169" height="168" style="border-radius: 0.25rem;">
+                                <h4>Teri Dastaan</h4>
+                                <p>Jasleen Royal, Neeraj Rajawat</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:8rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 175455.png" alt="img" width="169" style="border-radius: 0.25rem;">
+                                <h4>Aavesham</h4>
+                                <p>Sushin Shyam, Vinayak Sasikumar</p>
+                                <img src="play_musicbar.png" class="play" width="40">
+                            </div>
+                            <div class="card">
+                                <img src="album_icon5.jpg" alt="img" width="169"  height="168" style="border-radius: 0.25rem;">
+                                <h4>Tainu Khabar Nahi</h4>
+                                <p>Sachin-Jigar. Arijit Singh</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:8rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 175513.png" alt="img" width="169" style="border-radius: 0.25rem;">
+                                <h4>Still Rollin</h4>
+                                <p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+                                <img src="play_musicbar.png" class="play" width="40">
+                            </div>
+                        </div>
+                    <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                        <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Jump back in</h2>
+                        <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                        <div class="madeforuser">
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 181933.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Best of Javed ali</h4>
+                                <p>By Baidik</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 181942.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Hum Saath-Saat...</h4>
+                                <p>Ram Laxman</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 181948.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Heeramandi...</h4>
+                                <p>Sanjay Leela Bhansali</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 181955.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Stree</h4>
+                                <p>Sachin-Jigar</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 182000.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Panchayat</h4>
+                                <p>By Manan Das</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                            <div class="card">
+                                <img src="Screenshot 2024-07-23 182008.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                <h4>Jawan</h4>
+                                <p>Anirudh Ravichander</p>
+                                <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                            </div>
+                        </div>
+                        <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                            <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Best of artists</h2>
+                            <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                            <div class="madeforuser">
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181506.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This Is Arijit Singh</h4>
+                                    <p>Bollywood crooner's essential songs</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181519.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This is Jubin...</h4>
+                                    <p>This os Jubin Nautiyal. The essential tracks,...</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181528.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This is Amit Triv...</h4>
+                                    <p>This is Amit Trivedi.The essential tracks,...</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181647.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This is Vishal-...</h4>
+                                    <p>This is Vishal-Shekhar.The essential...</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181656.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This is Salim-...</h4>
+                                    <p>This is Salim-Sulaiman. The essential tracks...</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                                <div class="card">
+                                    <img src="Screenshot 2024-07-23 181714.png" alt="img" width="138" style="border-radius: 0.25rem;">
+                                    <h4>This is Pritam</h4>
+                                    <p>This is Pritam. The essential tracks, all i...</p>
+                                    <img src="play_musicbar.png" class="play" width="40">
+                                </div>
+                            </div>
+                            <div id="heading" style="display: flex; justify-content: space-between; margin: 1rem;">
+                                <h2 style="display: inline-block; font-size: 1.3rem;cursor: pointer;">Your favourite artists</h2>
+                                <a href="#" style="color: grey; font-weight: 700; font-size: 0.8rem; cursor: pointer;">Show all</a></div>
+                                <div class="madeforuser">
+                                    <div class="card">
+                                        <img src="amit.jpeg" alt="img" width="138" height="138" style="border-radius: 50%;">
+                                        <h4>Amit Trivedi</h4>
+                                        <p>Artist</p>
+                                        <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                                    </div>
+                                    <div class="card">
+                                        <img src="Screenshot 2024-07-23 181933.png" alt="img" width="138" height="138" style="border-radius: 50%;">
+                                        <h4>Javed Ali</h4>
+                                        <p>Artist</p>
+                                        <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                                    </div>
+                                    <div class="card">
+                                        <img src="album_icon7.jpg" alt="img" width="138" height="138" style="border-radius: 50%;">
+                                        <h4>Jubin Nautiyal</h4>
+                                        <p>Artist</p>
+                                        <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                                    </div>
+                                    <div class="card">
+                                        <img src="album_icon10.jpg" alt="img" width="138" height="138" style="border-radius: 50%;">
+                                        <h4>Arijit Singh</h4>
+                                        <p>Artist</p>
+                                        <img src="play_musicbar.png" class="play" width="40" style="position:relative;bottom: 5rem;left:6rem;">
+                                    </div>
+                                </div>
+            </div>
+            <footer>
+                <div class="sites">
+                <div>
+                    <h5>Company</h5>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the Record</a>
+                </div>
+                <div><h5>Communities</h5>
+                    <a href="#">For Artists</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">Investors</a>
+                    <a href="#">Vendors</a>
+                </div>
+                <div><h5>Useful Links</h5>
+                    <a href="#">Support</a>
+                    <a href="#">Free Mobile App</a></div>
+                    <div><h5>Spotify Plans</h5>
+                        <a href="#">Premium Individual</a>
+                        <a href="#">Premium Duo</a>
+                        <a href="#">Premium Family</a>
+                        <a href="#">Premium Student</a>
+                        <a href="#">Spotify Free</a>
+                    </div>
+                <div class="social"><button><i class="fa-brands fa-instagram"></i></button><button><i class="fa-brands fa-twitter"></i></button><button><i class="fa-brands fa-facebook"></i></button></div>
+              </div>
+              <div class="foot">
+                    <div class="legals">
+                    <a href="#">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+                </div>
+                    <div style="opacity: 0.7; font-size: 0.8rem;">&copy;2024 Spotify AB</div>
+                </div>
+            </footer>
+        </div>
+        <div class="media_player">
+            <div class="song-play">
+                <img src="album.jpg" src="album" width="60">
+                <span class="song_details"><p id="song_name">Nachde Ne Saare</p>
+                    <p id="artist">Jasleen Royal</p></span>
+                    <i class="fa-solid fa-circle-plus" id="plus-icon"></i>
+                
+            </div>
+            <div class="player">
+                <div class="icons">
+                <img src="player_icon1.png" alt="shuffle" height="15" style="opacity:0.2">
+                <img src="player_icon2.png" alt="previous" height="15" style="opacity:0.7" class="prenext">
+                <img src="player_icon3.png" alt="play" height="30" id="play">
+                <img src="player_icon4.png" alt="next" height="15" style="opacity:0.7" class="prenext">
+                <img src="player_icon5.png" alt="repeat" height="15" style="opacity:0.2">
+            </div>
+            <div class="progess-bar">
+                <span id="curr-time" style="opacity: 0.7; font-size: 0.75rem; position: relative; top:0.2rem;left:1.5rem;">0:00</span>
+                <input type="range" step="1"> 
+                <span id="end-time" style="opacity: 0.7; font-size: 0.75rem; position: relative; top:0.2rem;left:1.5rem;">3:14</span>
+            </div>
+            </div>
+            <div class="tools">
+                <img src="controls_icon1.png" alt="now playing view" height="35" style="position: relative; left:0.5rem;" >
+                <img src="controld_icon2.png" alt="mic" height="35" style="position: relative; left:0.5rem;">
+                <img src="controls_icon3.png" alt="queue" height="20" style="position: relative; top:0.5rem;left:0.5rem">
+                <img src="controls_icon4.png" alt="connect" height="15" style="position: relative; top:0.6rem;left:0.5rem">
+                <img src="controls_icon5.png" alt="volume" height="35" style="position: relative; left:0.5rem;">
+                <input type="range" min="0" max="100" step="1" style="position: relative;top:0.9rem;">
+                <img src="album_icon2.png" alt="picture-in-picture" height="30" style="position: relative; top:0.3rem">
+                <i class="fa-solid fa-up-right-and-down-left-from-center" style="position: relative; top:0.5rem;" ></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
