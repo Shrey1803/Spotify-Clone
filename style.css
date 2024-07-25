@@ -17,7 +17,7 @@ body .main{
 }
 .sidebar{
     background-color:black;
-    max-width:300px;
+    width:300px;
     border-radius:0.5rem;
     margin-right: 0.5rem;
     display:flex;
