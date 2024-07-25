@@ -167,17 +167,16 @@ body .main{
 .media_player .song-play{
     display:flex;
     margin-left:1rem;
-    align-items: center;
+    align-items: flex-start;
 }
 .media_player .song-play img{
         width:3.5rem;
         border-radius: 0.25rem;
         margin-right: 0.9rem;
-        margin-bottom: 0.4rem;
 }
 .media_player .song-play #song_name{
     font-size: 0.85rem;
-    margin-bottom: 0.2rem;
+    margin-top: 0.8rem;
     cursor: pointer;
     color: white;
     font-weight: 600;
@@ -200,6 +199,7 @@ body .main{
     color:rgba(255, 255,255, 0.5);
     cursor: pointer;
     margin-left: 0.5rem;
+    margin-top: 0.9rem;
 }
 .media_player .song-play #plus-icon:hover{
     color: white;
